@@ -36,7 +36,7 @@ class GuiMainMenu : GuiScreen(), GuiYesNoCallback {
         drawBackground(0)
 
         val bHeight = (this.height / 3.5).toInt()
-        RenderUtils.drawRoundedCornerRect(width / 2 - 60, bHeight - 30, width / 2 + 60, bHeight + 174, sqrt((BWidth * BHeight).toDouble()).toFloat() * 0.1f, Integer.MIN_VALUE)
+        RenderUtils.drawRoundedCornerRect(width / 2 - 60, bHeight - 30, width / 2 + 60, bHeight + 174, sqrt((width * bHeight).toDouble()).toFloat() * 0.1f, Integer.MIN_VALUE)
 
         mc.fontRendererObj.drawCenteredString(LiquidBounce.CLIENT_NAME, (width / 2).toFloat(), (bHeight - 20).toFloat(), Color.WHITE.rgb, false)
         mc.fontRendererObj.drawString(LiquidBounce.CLIENT_VERSION, 3F, (height - mc.fontRendererObj.FONT_HEIGHT - 2).toFloat(), 0xffffff, false)
