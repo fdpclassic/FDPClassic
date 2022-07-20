@@ -40,18 +40,9 @@ class GuiMainMenu : GuiScreen(), GuiYesNoCallback {
   //      RenderUtils.drawRoundedCornerRect(width / 2 - 60, bHeight - 30, width / 2 + 60, bHeight + 174, sqrt((this.width * this.height).toDouble()).toFloat() * 0.1f, Integer.MIN_VALUE)
 
         mc.fontRendererObj.drawCenteredString(LiquidBounce.CLIENT_NAME, (width / 2).toFloat(), (bHeight - 20).toFloat(), Color.WHITE.rgb, false)
-        mc.fontRendererObj.drawString(LiquidBounce.CLIENT_VERSION, 3F, (height - mc.fontRendererObj.FONT_HEIGHT - 2).toFloat(), 0xffffff, false)
         "§cWebsite: §fhttps://${LiquidBounce.CLIENT_WEBSITE}/".also { str ->
             mc.fontRendererObj.drawString(str, (this.width - mc.fontRendererObj.getStringWidth(str) - 3).toFloat(), (height - mc.fontRendererObj.FONT_HEIGHT - 2).toFloat(), 0xffffff, false)
         }
-
-        if(LiquidBounce.latest != LiquidBounce.CLIENT_VERSION && LiquidBounce.latest.isNotEmpty()) {
-            val str = LanguageManager.getAndFormat("ui.update.released", LiquidBounce.latest)
-            val start = width / 2f - (mc.fontRendererObj.getStringWidth(str) / 2f)
-            RenderUtils.drawRect(start, 15f, start + mc.fontRendererObj.getStringWidth(str), 15f + mc.fontRendererObj.FONT_HEIGHT, Color.BLACK.rgb)
-            mc.fontRendererObj.drawString(str, start, 15f, Color.WHITE.rgb, false)
-        }
-
         super.drawScreen(mouseX, mouseY, partialTicks)
     }
 
