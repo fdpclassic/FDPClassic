@@ -16,6 +16,7 @@ import net.minecraft.client.gui.*
 import net.minecraft.client.resources.I18n
 import net.minecraftforge.fml.client.GuiModList
 import java.awt.Color
+import kotlin.math.sqrt
 
 class GuiMainMenu : GuiScreen(), GuiYesNoCallback {
     override fun initGui() {
