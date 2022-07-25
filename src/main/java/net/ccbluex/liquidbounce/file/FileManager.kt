@@ -20,11 +20,12 @@ import java.io.*
 import javax.imageio.ImageIO
 
 class FileManager : MinecraftInstance() {
-    val dir = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME + "-1.8")
+    val dir = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME)
     val cacheDir = File(mc.mcDataDir, ".cache/" + LiquidBounce.CLIENT_NAME)
     val fontsDir = File(dir, "fonts")
     val configsDir = File(dir, "configs")
     val soundsDir = File(dir, "sounds")
+    val JelloSoundsDir = File(dir, "sounds/jello")
     val legacySettingsDir = File(dir, "legacy-settings")
     val capesDir = File(dir, "capes")
     val accountsConfig = AccountsConfig(File(dir, "accounts.json"))
@@ -64,6 +65,10 @@ class FileManager : MinecraftInstance() {
             soundsDir.mkdir()
         }
 
+        if (!JelloSoundsDir.exists()) {
+            JelloSoundsDir.mkdir()
+        }
+        
         if (!capesDir.exists()) {
             capesDir.mkdir()
         }
