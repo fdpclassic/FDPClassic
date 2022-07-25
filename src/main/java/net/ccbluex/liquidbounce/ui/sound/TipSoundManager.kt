@@ -2,7 +2,9 @@ package net.ccbluex.liquidbounce.ui.sound
 
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.utils.FileUtils
+import net.minecraft.util.ResourceLocation
 import java.io.File
+
 
 class TipSoundManager {
     var enableSound: TipSoundPlayer
