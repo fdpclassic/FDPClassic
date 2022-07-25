@@ -15,8 +15,8 @@ class TipSoundManager {
     init {
         val enableSoundFile = File(LiquidBounce.fileManager.soundsDir, "enable.wav")
         val disableSoundFile = File(LiquidBounce.fileManager.soundsDir, "disable.wav")
-        val JelloEnableSoundFile = ResourceLocation("fdpclient/sound/jello/enable.wav")
-        val JelloDisableSoundFile = ResourceLocation("fdpclient/sound/jello/disable.wav")
+        val JelloEnableSoundFile = File(ResourceLocation("fdpclient/sound/jello/enable.wav"))
+        val JelloDisableSoundFile = File(ResourceLocation("fdpclient/sound/jello/disable.wav"))
 
         if (!enableSoundFile.exists()) {
             FileUtils.unpackFile(enableSoundFile, "assets/minecraft/fdpclient/sound/enable.wav")
