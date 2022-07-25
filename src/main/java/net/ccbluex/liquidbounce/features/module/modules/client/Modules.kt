@@ -22,9 +22,9 @@ object Modules : Module() {
 
             "jello" -> {
                 if (enable) {
-                    mc.soundHandler.playSound(PositionedSoundRecord.create(ResourceLocation("fdpclient/sound/jello/enable.wav"), 1F))
+                    mc.soundHandler.playSound(PositionedSoundRecord.create(ResourceLocation("fdpclient/sound/jello/enable.ogg"), 1F))
                 } else {
-                    mc.soundHandler.playSound(PositionedSoundRecord.create(ResourceLocation("fdpclient/sound/jello/disable.wav"), 1F))
+                    mc.soundHandler.playSound(PositionedSoundRecord.create(ResourceLocation("fdpclient/sound/jello/disable.ogg"), 1F))
                 }
             }
 
