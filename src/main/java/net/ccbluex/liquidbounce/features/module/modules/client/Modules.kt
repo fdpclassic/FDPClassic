@@ -22,9 +22,9 @@ object Modules : Module() {
 
             "jello" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.JelloEnableSound.asyncPlay()
+                    mc.soundHandler.playSound(PositionedSoundRecord.create(ResourceLocation("fdpclient/sound/jello/enable.wav"), 1F))
                 } else {
-                    LiquidBounce.tipSoundManager.JelloDisableSound.asyncPlay()
+                    mc.soundHandler.playSound(PositionedSoundRecord.create(ResourceLocation("fdpclient/sound/jello/disable.wav"), 1F))
                 }
             }
 
