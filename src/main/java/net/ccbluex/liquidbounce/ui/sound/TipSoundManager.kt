@@ -7,6 +7,8 @@ import java.io.File
 class TipSoundManager {
     var enableSound: TipSoundPlayer
     var disableSound: TipSoundPlayer
+    var JelloEnableSound: TipSoundPlayer
+    var JelloDisableSound: TipSoundPlayer
 
     init {
         val enableSoundFile = File(LiquidBounce.fileManager.soundsDir, "enable.wav")
