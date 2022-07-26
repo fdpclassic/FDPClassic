@@ -25,7 +25,16 @@ class FileManager : MinecraftInstance() {
     val fontsDir = File(dir, "fonts")
     val configsDir = File(dir, "configs")
     val soundsDir = File(dir, "sounds")
+    val AirpodsSoundsDir = File(dir, "sounds/Airpods")
+    val AppleAncSoundsDir = File(dir, "sounds/AppleAnc")
     val JelloSoundsDir = File(dir, "sounds/jello")
+    val LonghornSoundsDir = File(dir, "sounds/Longhorn")
+    val SiriSoundsDir = File(dir, "sounds/Siri")
+    val SparklingwaterSoundsDir = File(dir, "sounds/Sparklingwater")
+    val StephenHawkingSoundsDir = File(dir, "sounds/StephenHawking")
+    val TeslaSoundsDir = File(dir, "sounds/Tesla")
+    val win11SoundsDir = File(dir, "sounds/win11")
+    val WinvcSoundsDir = File(dir, "sounds/Winvc")
     val legacySettingsDir = File(dir, "legacy-settings")
     val capesDir = File(dir, "capes")
     val accountsConfig = AccountsConfig(File(dir, "accounts.json"))
@@ -67,6 +76,33 @@ class FileManager : MinecraftInstance() {
 
         if (!JelloSoundsDir.exists()) {
             JelloSoundsDir.mkdir()
+        }
+        if (!AirpodsSoundsDir.exists()) {
+            AirpodsSoundsDir.mkdir()
+        }
+        if (!AppleAncSoundsDir.exists()) {
+            AppleAncSoundsDir.mkdir()
+        }
+        if (!LonghornSoundsDir.exists()) {
+            LonghornSoundsDir.mkdir()
+        }
+        if (!SiriSoundsDir.exists()) {
+            SiriSoundsDir.mkdir()
+        }
+        if (!SparklingwaterSoundsDir.exists()) {
+            SparklingwaterSoundsDir.mkdir()
+        }
+        if (!StephenHawkingSoundsDir.exists()) {
+            StephenHawkingSoundsDir.mkdir()
+        }
+        if (!TeslaSoundsDir.exists()) {
+            TeslaSoundsDir.mkdir()
+        }
+        if (!win11SoundsDir.exists()) {
+            win11SoundsDir.mkdir()
+        }
+        if (!WinvcSoundsDir.exists()) {
+            WinvcSoundsDir.mkdir()
         }
         
         if (!capesDir.exists()) {
