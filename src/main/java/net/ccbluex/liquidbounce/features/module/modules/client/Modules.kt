@@ -68,7 +68,7 @@ object Modules : Module() {
                 }
             }
 
-            "stephenHawking" -> {
+            "stephenhawking" -> {
                 if (enable) {
                     LiquidBounce.tipSoundManager.stephenhawkingEnableSound.asyncPlay()
                 } else {
