@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation
 @ModuleInfo(name = "Modules", category = ModuleCategory.CLIENT, canEnable = false)
 object Modules : Module() {
     val toggleIgnoreScreenValue = BoolValue("ToggleIgnoreScreen", false)
-    private val toggleSoundValue = ListValue("ToggleSound", arrayOf("None", "jello", "Click", "Custom"), "Click")
+    private val toggleSoundValue = ListValue("ToggleSound", arrayOf("None", "airpods", "airpodsanc", "LG", "longhorn", "msduo", "tesla", "win11", "winvc", "SparklingWater", "winvc", "siri", "googleassistant", "jello", "Click", "Custom"), "Click")
 
     fun playSound(enable: Boolean) {
         when (toggleSoundValue.get().lowercase()) {
