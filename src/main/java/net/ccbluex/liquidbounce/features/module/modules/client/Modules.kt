@@ -38,9 +38,9 @@ object Modules : Module() {
 
             "appleanc" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.appleAncEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.appleancEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.appleAncDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.appleancDisableSound.asyncPlay()
                 }
             }
 
