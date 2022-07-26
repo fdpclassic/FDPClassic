@@ -66,70 +66,70 @@ class TipSoundManager {
         val AirpodsDisableSoundFile = File(LiquidBounce.fileManager.AirpodsSoundsDir, "disable.wav")
 
         if (!AirpodsEnableSoundFile.exists()) {
-            FileUtils.unpackFile(AirpodsEnableSoundFile, "assets/minecraft/fdpclient/sound/Airpods/enable.wav")
+            FileUtils.unpackFile(AirpodsEnableSoundFile, "assets/minecraft/fdpclient/sound/airpods/enable.wav")
         }
         if (!AirpodsDisableSoundFile.exists()) {
-            FileUtils.unpackFile(AirpodsDisableSoundFile, "assets/minecraft/fdpclient/sound/Airpods/disable.wav")
+            FileUtils.unpackFile(AirpodsDisableSoundFile, "assets/minecraft/fdpclient/sound/airpods/disable.wav")
         }
         // AppleAnc
         val AppleAncEnableSoundFile = File(LiquidBounce.fileManager.AppleAncSoundsDir, "enable.wav")
         val AppleAncDisableSoundFile = File(LiquidBounce.fileManager.AppleAncSoundsDir, "disable.wav")
 
         if (!AppleAncEnableSoundFile.exists()) {
-            FileUtils.unpackFile(AppleAncEnableSoundFile, "assets/minecraft/fdpclient/sound/AppleAnc/enable.wav")
+            FileUtils.unpackFile(AppleAncEnableSoundFile, "assets/minecraft/fdpclient/sound/appleanc/enable.wav")
         }
         if (!AppleAncDisableSoundFile.exists()) {
-            FileUtils.unpackFile(AppleAncDisableSoundFile, "assets/minecraft/fdpclient/sound/AppleAnc/disable.wav")
+            FileUtils.unpackFile(AppleAncDisableSoundFile, "assets/minecraft/fdpclient/sound/appleanc/disable.wav")
         }
         // Longhorn
         val LonghornEnableSoundFile = File(LiquidBounce.fileManager.LonghornSoundsDir, "enable.wav")
         val LonghornDisableSoundFile = File(LiquidBounce.fileManager.LonghornSoundsDir, "disable.wav")
 
         if (!LonghornEnableSoundFile.exists()) {
-            FileUtils.unpackFile(LonghornEnableSoundFile, "assets/minecraft/fdpclient/sound/Longhorn/enable.wav")
+            FileUtils.unpackFile(LonghornEnableSoundFile, "assets/minecraft/fdpclient/sound/longhorn/enable.wav")
         }
         if (!LonghornDisableSoundFile.exists()) {
-            FileUtils.unpackFile(LonghornDisableSoundFile, "assets/minecraft/fdpclient/sound/Longhorn/disable.wav")
+            FileUtils.unpackFile(LonghornDisableSoundFile, "assets/minecraft/fdpclient/sound/longhorn/disable.wav")
         }
         // Siri
         val SiriEnableSoundFile = File(LiquidBounce.fileManager.SiriSoundsDir, "enable.wav")
         val SiriDisableSoundFile = File(LiquidBounce.fileManager.SiriSoundsDir, "disable.wav")
 
         if (!SiriEnableSoundFile.exists()) {
-            FileUtils.unpackFile(SiriEnableSoundFile, "assets/minecraft/fdpclient/sound/Siri/enable.wav")
+            FileUtils.unpackFile(SiriEnableSoundFile, "assets/minecraft/fdpclient/sound/siri/enable.wav")
         }
         if (!SiriDisableSoundFile.exists()) {
-            FileUtils.unpackFile(SiriDisableSoundFile, "assets/minecraft/fdpclient/sound/Siri/disable.wav")
+            FileUtils.unpackFile(SiriDisableSoundFile, "assets/minecraft/fdpclient/sound/siri/disable.wav")
         }
         // Sparklingwater
         val SparklingwaterEnableSoundFile = File(LiquidBounce.fileManager.SparklingwaterSoundsDir, "enable.wav")
         val SparklingwaterDisableSoundFile = File(LiquidBounce.fileManager.SparklingwaterSoundsDir, "disable.wav")
 
         if (!SparklingwaterEnableSoundFile.exists()) {
-            FileUtils.unpackFile(SparklingwaterEnableSoundFile, "assets/minecraft/fdpclient/sound/Sparklingwater/enable.wav")
+            FileUtils.unpackFile(SparklingwaterEnableSoundFile, "assets/minecraft/fdpclient/sound/sparklingwater/enable.wav")
         }
         if (!SparklingwaterDisableSoundFile.exists()) {
-            FileUtils.unpackFile(SparklingwaterDisableSoundFile, "assets/minecraft/fdpclient/sound/Sparklingwater/disable.wav")
+            FileUtils.unpackFile(SparklingwaterDisableSoundFile, "assets/minecraft/fdpclient/sound/sparklingwater/disable.wav")
         }
         // StephenHawking
         val StephenHawkingEnableSoundFile = File(LiquidBounce.fileManager.StephenHawkingSoundsDir, "enable.wav")
         val StephenHawkingDisableSoundFile = File(LiquidBounce.fileManager.StephenHawkingSoundsDir, "disable.wav")
 
         if (!StephenHawkingEnableSoundFile.exists()) {
-            FileUtils.unpackFile(StephenHawkingEnableSoundFile, "assets/minecraft/fdpclient/sound/StephenHawking/enable.wav")
+            FileUtils.unpackFile(StephenHawkingEnableSoundFile, "assets/minecraft/fdpclient/sound/stephenhawking/enable.wav")
         }
         if (!StephenHawkingDisableSoundFile.exists()) {
-            FileUtils.unpackFile(StephenHawkingDisableSoundFile, "assets/minecraft/fdpclient/sound/StephenHawking/disable.wav")
+            FileUtils.unpackFile(StephenHawkingDisableSoundFile, "assets/minecraft/fdpclient/sound/stephenhawking/disable.wav")
         }
         // Tesla
         val TeslaEnableSoundFile = File(LiquidBounce.fileManager.TeslaSoundsDir, "enable.wav")
         val TeslaDisableSoundFile = File(LiquidBounce.fileManager.TeslaSoundsDir, "disable.wav")
 
         if (!TeslaEnableSoundFile.exists()) {
-            FileUtils.unpackFile(TeslaEnableSoundFile, "assets/minecraft/fdpclient/sound/Tesla/enable.wav")
+            FileUtils.unpackFile(TeslaEnableSoundFile, "assets/minecraft/fdpclient/sound/tesla/enable.wav")
         }
         if (!TeslaDisableSoundFile.exists()) {
-            FileUtils.unpackFile(TeslaDisableSoundFile, "assets/minecraft/fdpclient/sound/Tesla/disable.wav")
+            FileUtils.unpackFile(TeslaDisableSoundFile, "assets/minecraft/fdpclient/sound/tesla/disable.wav")
         }
         // win11
         val win11EnableSoundFile = File(LiquidBounce.fileManager.win11SoundsDir, "enable.wav")
@@ -146,10 +146,10 @@ class TipSoundManager {
         val WinvcDisableSoundFile = File(LiquidBounce.fileManager.WinvcSoundsDir, "disable.wav")
 
         if (!WinvcEnableSoundFile.exists()) {
-            FileUtils.unpackFile(WinvcEnableSoundFile, "assets/minecraft/fdpclient/sound/Winvc/enable.wav")
+            FileUtils.unpackFile(WinvcEnableSoundFile, "assets/minecraft/fdpclient/sound/winvc/enable.wav")
         }
         if (!WinvcDisableSoundFile.exists()) {
-            FileUtils.unpackFile(WinvcDisableSoundFile, "assets/minecraft/fdpclient/sound/Winvc/disable.wav")
+            FileUtils.unpackFile(WinvcDisableSoundFile, "assets/minecraft/fdpclient/sound/winvc/disable.wav")
         }
 
 
