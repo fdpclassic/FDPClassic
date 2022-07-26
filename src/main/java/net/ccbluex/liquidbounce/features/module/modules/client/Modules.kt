@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation
 @ModuleInfo(name = "Modules", category = ModuleCategory.CLIENT, canEnable = false)
 object Modules : Module() {
     val toggleIgnoreScreenValue = BoolValue("ToggleIgnoreScreen", false)
-    private val toggleSoundValue = ListValue("ToggleSound", arrayOf("None", "Airpods", "AppleAnc", "Longhorn", "Siri", "Sparklingwater", "StephenHawking", "Tesla", "win11", "Winvc", "jello", "Click", "Custom"), "Click")
+    private val toggleSoundValue = ListValue("ToggleSound", arrayOf("None", "airpods", "appleanc", "longhorn", "siri", "sparklingwater", "stephenhawking", "tesla", "win11", "winvc", "jello", "click", "Custom"), "win11")
 
     fun playSound(enable: Boolean) {
         when (toggleSoundValue.get().lowercase()) {
@@ -22,65 +22,65 @@ object Modules : Module() {
 
             "jello" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.JelloEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.jelloEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.JelloDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.jelloDisableSound.asyncPlay()
                 }
             }
 
-            "Airpods" -> {
+            "airpods" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.AirpodsEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.airpodsEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.AirpodsDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.airpodsDisableSound.asyncPlay()
                 }
             }
 
-            "AppleAnc" -> {
+            "appleanc" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.AppleAncEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.appleAncEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.AppleAncDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.appleAncDisableSound.asyncPlay()
                 }
             }
 
-            "Longhorn" -> {
+            "longhorn" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.LonghornEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.longhornEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.LonghornDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.longhornDisableSound.asyncPlay()
                 }
             }
 
-            "Siri" -> {
+            "siri" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.SiriEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.siriEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.SiriDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.siriDisableSound.asyncPlay()
                 }
             }
 
-            "Sparklingwater" -> {
+            "sparklingwater" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.SparklingwaterEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.sparklingwaterEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.SparklingwaterDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.sparklingwaterDisableSound.asyncPlay()
                 }
             }
 
-            "StephenHawking" -> {
+            "stephenHawking" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.StephenHawkingEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.stephenhawkingEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.StephenHawkingDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.stephenhawkingDisableSound.asyncPlay()
                 }
             }
 
-            "Tesla" -> {
+            "tesla" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.TeslaEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.teslaEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.TeslaDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.teslaDisableSound.asyncPlay()
                 }
             }
 
@@ -92,11 +92,11 @@ object Modules : Module() {
                 }
             }
             
-            "Winvc" -> {
+            "winvc" -> {
                 if (enable) {
-                    LiquidBounce.tipSoundManager.WinvcEnableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.winvcEnableSound.asyncPlay()
                 } else {
-                    LiquidBounce.tipSoundManager.WinvcDisableSound.asyncPlay()
+                    LiquidBounce.tipSoundManager.winvcDisableSound.asyncPlay()
                 }
             }
 

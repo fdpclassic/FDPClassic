@@ -25,16 +25,16 @@ class FileManager : MinecraftInstance() {
     val fontsDir = File(dir, "fonts")
     val configsDir = File(dir, "configs")
     val soundsDir = File(dir, "sounds")
-    val AirpodsSoundsDir = File(dir, "sounds/airpods")
-    val AppleAncSoundsDir = File(dir, "sounds/appleanc")
-    val JelloSoundsDir = File(dir, "sounds/jello")
-    val LonghornSoundsDir = File(dir, "sounds/longhorn")
-    val SiriSoundsDir = File(dir, "sounds/siri")
-    val SparklingwaterSoundsDir = File(dir, "sounds/sparklingwater")
-    val StephenHawkingSoundsDir = File(dir, "sounds/stephenhawking")
-    val TeslaSoundsDir = File(dir, "sounds/tesla")
+    val airpodsSoundsDir = File(dir, "sounds/airpods")
+    val appleancSoundsDir = File(dir, "sounds/appleanc")
+    val jelloSoundsDir = File(dir, "sounds/jello")
+    val longhornSoundsDir = File(dir, "sounds/longhorn")
+    val siriSoundsDir = File(dir, "sounds/siri")
+    val sparklingwaterSoundsDir = File(dir, "sounds/sparklingwater")
+    val stephenhawkingSoundsDir = File(dir, "sounds/stephenhawking")
+    val teslaSoundsDir = File(dir, "sounds/tesla")
     val win11SoundsDir = File(dir, "sounds/win11")
-    val WinvcSoundsDir = File(dir, "sounds/winvc")
+    val winvcSoundsDir = File(dir, "sounds/winvc")
     val legacySettingsDir = File(dir, "legacy-settings")
     val capesDir = File(dir, "capes")
     val accountsConfig = AccountsConfig(File(dir, "accounts.json"))
@@ -74,35 +74,35 @@ class FileManager : MinecraftInstance() {
             soundsDir.mkdir()
         }
 
-        if (!JelloSoundsDir.exists()) {
-            JelloSoundsDir.mkdir()
+        if (!jelloSoundsDir.exists()) {
+            jelloSoundsDir.mkdir()
         }
-        if (!AirpodsSoundsDir.exists()) {
-            AirpodsSoundsDir.mkdir()
+        if (!airpodsSoundsDir.exists()) {
+            airpodsSoundsDir.mkdir()
         }
-        if (!AppleAncSoundsDir.exists()) {
-            AppleAncSoundsDir.mkdir()
+        if (!appleancSoundsDir.exists()) {
+            appleancSoundsDir.mkdir()
         }
-        if (!LonghornSoundsDir.exists()) {
-            LonghornSoundsDir.mkdir()
+        if (!longhornSoundsDir.exists()) {
+            longhornSoundsDir.mkdir()
         }
-        if (!SiriSoundsDir.exists()) {
-            SiriSoundsDir.mkdir()
+        if (!siriSoundsDir.exists()) {
+            siriSoundsDir.mkdir()
         }
-        if (!SparklingwaterSoundsDir.exists()) {
-            SparklingwaterSoundsDir.mkdir()
+        if (!sparklingwaterSoundsDir.exists()) {
+            sparklingwaterSoundsDir.mkdir()
         }
-        if (!StephenHawkingSoundsDir.exists()) {
-            StephenHawkingSoundsDir.mkdir()
+        if (!stephenhawkingSoundsDir.exists()) {
+            stephenhawkingSoundsDir.mkdir()
         }
-        if (!TeslaSoundsDir.exists()) {
-            TeslaSoundsDir.mkdir()
+        if (!teslaSoundsDir.exists()) {
+            teslaSoundsDir.mkdir()
         }
         if (!win11SoundsDir.exists()) {
             win11SoundsDir.mkdir()
         }
-        if (!WinvcSoundsDir.exists()) {
-            WinvcSoundsDir.mkdir()
+        if (!winvcSoundsDir.exists()) {
+            winvcSoundsDir.mkdir()
         }
         
         if (!capesDir.exists()) {
