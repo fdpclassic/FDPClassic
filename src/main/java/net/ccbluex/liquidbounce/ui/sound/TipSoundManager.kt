@@ -28,8 +28,8 @@ class TipSoundManager {
     var sparklingwaterEnableSound: TipSoundPlayer
     var sparklingwaterDisableSound: TipSoundPlayer
     // StephenHawking
-    var stephenHawkingEnableSound: TipSoundPlayer
-    var stephenHawkingDisableSound: TipSoundPlayer
+    var stephenhawkingEnableSound: TipSoundPlayer
+    var stephenhawkingDisableSound: TipSoundPlayer
     // Tesla
     var teslaEnableSound: TipSoundPlayer
     var teslaDisableSound: TipSoundPlayer
