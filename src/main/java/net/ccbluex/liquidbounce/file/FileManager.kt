@@ -17,11 +17,11 @@ import net.ccbluex.liquidbounce.utils.MinecraftInstance
 import net.minecraft.client.renderer.texture.DynamicTexture
 import net.minecraft.util.ResourceLocation
 import java.io.*
-import javax.imageio.ImageIO
+import javax.imageio.ImageIO    val oldDir: File
 
 class FileManager : MinecraftInstance() {
-    val dir = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME)
-    const val oldDir = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME + "-1.8")
+    val dir: File = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME)
+    val oldDir: File = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME + "-1.8")
     val cacheDir = File(mc.mcDataDir, ".cache/" + LiquidBounce.CLIENT_NAME)
     val fontsDir = File(dir, "fonts")
     val configsDir = File(dir, "configs")
