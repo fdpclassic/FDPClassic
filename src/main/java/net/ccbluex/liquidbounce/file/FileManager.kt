@@ -20,6 +20,7 @@ import java.io.*
 import javax.imageio.ImageIO    val oldDir: File
 
 class FileManager : MinecraftInstance() {
+    @JvmField
     val dir: File = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME)
     val oldDir: File = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME + "-1.8")
     val cacheDir = File(mc.mcDataDir, ".cache/" + LiquidBounce.CLIENT_NAME)
