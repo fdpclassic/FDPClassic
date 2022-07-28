@@ -21,6 +21,7 @@ import javax.imageio.ImageIO
 
 class FileManager : MinecraftInstance() {
     val dir = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME)
+    val oldDir = File(mc.mcDataDir, LiquidBounce.CLIENT_NAME + "-1.8")
     val cacheDir = File(mc.mcDataDir, ".cache/" + LiquidBounce.CLIENT_NAME)
     val fontsDir = File(dir, "fonts")
     val configsDir = File(dir, "configs")
@@ -59,6 +60,10 @@ class FileManager : MinecraftInstance() {
      */
     fun setupFolder() {
         if (!dir.exists()) {
+            if (oldDir.exists()) {
+                if (!oldDir.renameTo(dir))
+                       dir = oldDir // if renaming failed, continue to use the old folder.
+            } else
             dir.mkdir()
         }
 
