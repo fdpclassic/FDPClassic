@@ -17,7 +17,7 @@ import net.ccbluex.liquidbounce.utils.MinecraftInstance
 import net.minecraft.client.renderer.texture.DynamicTexture
 import net.minecraft.util.ResourceLocation
 import java.io.*
-import javax.imageio.ImageIO    val oldDir: File
+import javax.imageio.ImageIO   
 
 class FileManager : MinecraftInstance() {
     @JvmField
