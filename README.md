@@ -1,4 +1,4 @@
-# FDPClassic v2 (fdp v4 with older visuals)
+# FDPClassic v2 (fdp v4 with older visuals) 
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/fdpclassic/FDPclassic)
 ![GitHub lines of code](https://tokei.rs/b1/github/fdpclassic/FDPclassic)
