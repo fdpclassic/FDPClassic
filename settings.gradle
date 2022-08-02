@@ -1,6 +1,6 @@
 pluginManagement {
 	repositories {
-
+		mavenCentral()
 		maven { url = "http://skiddermc.github.io/repo/" }
 	}
 	resolutionStrategy {
